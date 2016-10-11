@@ -22,7 +22,7 @@ public class FirstTest {
         driver.manage().timeouts().implicitlyWait(20000, TimeUnit.MILLISECONDS);
         driver.navigate().to("http://www.axesamples.com/axe40/applications/OdinPortal");
         driver.findElement(By.xpath("//a[text()='Login']")).click();
-        driver.findElement(By.cssSelector("input[type='text'][name='TextBoxUserId']")).sendKeys(new String[] {"Test"});
+        driver.findElement(By.cssSelector("input[type='text'][name='TextBoxUserId']")).sendKeys("Test");
         driver.findElement(By.cssSelector("input[type='button'][value='Login']")).click();
         driver.close();
         driver.quit();
